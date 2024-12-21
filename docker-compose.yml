@@ -1,0 +1,25 @@
+version: '3.9'
+services:
+  ecommerce:
+    build: ./ecommerce
+    ports:
+      - '8000:8000'
+    depends_on:
+      - store
+      - exchange
+      - fidelity
+
+  store:
+    build: ./store
+    ports:
+      - '8001:8001'
+
+  exchange:
+    build: ./exchange
+    ports:
+      - '8002:8002'
+
+  fidelity:
+    build: ./fidelity
+    ports:
+      - '8003:8003'
