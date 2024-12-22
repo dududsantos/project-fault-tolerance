@@ -76,8 +76,3 @@ Para encerrar todos os contêineres, execute:
 docker-compose down
 ```
 
-## Observações
-
-- Certifique-se de que as portas utilizadas (8000 a 8003) estejam livres.
-- Os logs dos contêineres podem ser visualizados no terminal para depuração.
-- Em caso de problemas, valide as dependências instaladas e as configurações do Docker.
